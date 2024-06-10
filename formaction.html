@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CatCoin - Ação do Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="form.html">Formulário</a></li>
+                <li><a href="about.html">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Dados Recebidos</h2>
+        <p id="output"></p>
+    </main>
+    <footer>
+        <p>&copy; 2024 CatCoin. Todos os direitos reservados.</p>
+    </footer>
+    <script>
+        window.onload = function() {
+            const params = new URLSearchParams(window.location.search);
+            const name = params.get('name');
+            const email = params.get('email');
+            const age = params.get('age');
+            
+            document.getElementById('output').innerHTML = 
+                `Nome: ${name}<br>Email: ${email}<br>Idade: ${age}`;
+        };
+    </script>
+</body>
+</html>

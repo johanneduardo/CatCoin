@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CatCoin - Sobre</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <h1 class="h1header">Bem-vindo ao Maior Token da Atualidade</h1>
+        <nav>
+            <div class="menu-container">
+                <button class="menu-button" onclick="toggleMenu()">Menu</button>
+                <div id="menuContent" class="menu-content">
+                    <a href="index.html">Início</a>
+                    <a href="form.html">Formulário</a>
+                    <a href="about.html">Sobre</a>
+                </div>
+            </div>
+
+            <script>
+                function toggleMenu() {
+                    document.getElementById("menuContent").classList.toggle("show");
+                }
+
+                //
+                window.onclick = function (event) {
+                    if (!event.target.matches('.menu-button')) {
+                        var dropdowns = document.getElementsByClassName("menu-content");
+                        for (var i = 0; i < dropdowns.length; i++) {
+                            var openDropdown = dropdowns[i];
+                            if (openDropdown.classList.contains('show')) {
+                                openDropdown.classList.remove('show');
+                            }
+                        }
+                    }
+                }
+            </script>
+        </nav>
+
+    </header>
+    <main>
+        <div class="banner-container">
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    const banners = document.querySelectorAll('.banner-img');
+                    let index = 0;
+
+                    function changeBanner() {
+                        banners.forEach(banner => {
+                            banner.classList.remove('active');
+                        });
+                        banners[index].classList.add('active');
+                        index = (index + 1) % banners.length;
+                    }
+
+                    setInterval(changeBanner, 3000); // Altera a cada 3 segundos (3000 milissegundos)
+                });
+
+            </script>
+            <img src="img/Inserir um subtítulo.jpg" class="banner-img">
+            <img src="img/ronaldo (1).jpg" class="banner-img">
+            <img src="img/ronaldo.jpg" class="banner-img">
+        </div>
+        <p class="psobre">CatCoin é uma criptomoeda baseada no humor e na popularidade dos memes de gatos na internet.
+            Junte-se a nós e
+            participe da comunidade mais fofa e engraçada do mundo das criptomoedas!</p>
+        <div class="gatofotoindex">
+            <img src="img/images.jpg" alt="gato chorando" class="gatochorando">
+            <blockquote class="blockquote"> "Esse seria o Gato Moedas, que ficou conhecido por todos como CatCoin...
+                Token que de inicio não passaria de uma piada e no fim tomou um proporção gigantesca, ultrapassando o
+                valor de U$1.900,00
+                Uma moeda que tranformou vidas, de inicio nao contavamos com uma repercursao tao grande."</blockquote>
+        </div>
+        <h2 class="h2sobre">Sobre CatCoin</h2>
+        <p class="sobreamoeda">Em um mundo onde surgem novas criptomoedas todos os dias, a comunidade online "CatLovers" se destacou com
+            memes de gatos. Johann, um programador talentoso, teve a ideia de criar a CatCoin, uma criptomoeda inspirada
+            em gatos, para unir a comunidade e arrecadar fundos para ajudar gatos abandonados. Com a ajuda de seu amigo
+            Vanderlei, um designer gráfico, eles lançaram a moeda com um logotipo adorável de um gato sorridente.
+
+            O lançamento da CatCoin foi um sucesso imediato na comunidade CatLovers, com um evento online distribuindo
+            moedas gratuitamente. A notícia se espalhou rapidamente, atraindo a atenção de blogs de tecnologia e até de
+            celebridades como Taylor Swift e Ian Somerhalder, aumentando ainda mais sua popularidade.
+
+            Para cada transação, 10% dos valores eram doados para abrigos e resgates de animais, o que fortaleceu a
+            imagem positiva da CatCoin. Em menos de um ano, a CatCoin viu seu valor disparar, ultrapassando U$1.900,00,
+            transformando Johann e Vanderlei em lendas do mundo das criptomoedas..</p>
+        <h3>Autor</h3>
+        <p>Nome dos Autores: [Johann & Vanderlei]</p>
+        <p>Email: [Seu Email]</p>
+    </main>
+    <footer>
+        <p>&copy; 2024 CatCoin. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CatCoin</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1 class="h1header">Bem-vindo ao Maior Token da Atualidade</h1>
+        <nav>
+            <div class="menu-container">
+                <button class="menu-button" onclick="toggleMenu()">Menu</button>
+                <div id="menuContent" class="menu-content">
+                    <a href="index.html">Início</a>
+                    <a href="form.html">Formulário</a>
+                    <a href="about.html">Sobre</a>
+                </div>
+            </div>
+            
+            <script>
+                function toggleMenu() {
+                    document.getElementById("menuContent").classList.toggle("show");
+                }
+            
+                //
+                window.onclick = function(event) {
+                    if (!event.target.matches('.menu-button')) {
+                        var dropdowns = document.getElementsByClassName("menu-content");
+                        for (var i = 0; i < dropdowns.length; i++) {
+                            var openDropdown = dropdowns[i];
+                            if (openDropdown.classList.contains('show')) {
+                                openDropdown.classList.remove('show');
+                            }
+                        }
+                    }
+                }
+                </script>
+        </nav>
+    </header>
+    <main>
+        <h2 class="h2main">Conheça Agora a  <span class="spanmain">CatCoin</span></h2>
+        <img src="img/Design sem nome.jpg" alt="noticia memecoin" class="urgenteum">
+        <h3 class="h3main"><a href="about.html" class="ah3main">QUERO SABER MAIS SOBRE A MOEDA!</a></h3>
+    </main>
+    <footer>
+        <p>&copy; 2024 CatCoin. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>
