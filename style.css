@@ -228,14 +228,14 @@ footer {
     background: #ffffff;
     padding: 8px;
     margin-top: 50px;
-    color: #fff;
+    color: #000; 
     text-align: center;
-    padding: 20px;
+
     left: 0;
     bottom: 0;
     width: 100%;
-    
 }
+
 
 footer p {
     color: black;
@@ -247,30 +247,41 @@ footer p {
 
 /*INICIO FORMULARIO*/
 
+.h2formulario {
+    text-align: center;
+    font-family: 'Arial';
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 15px;
+}
 
 form {
-    display: flex;
-    flex-direction: column;
     margin: auto;
     text-align: center;
-    height: 100px;
+    height: auto;
 }
 
 input {
     margin-top: 15px;
     border: 2px solid #00ffdd;
+    background: #000;
     border-radius: 20px;
     height: 60px; 
     font-size: 40px;
+    width: 80%; 
+    text-align: center;
 }
 
 .buttons {
-    color: rgb(0, 0, 0);
-    background: rgb(0, 0, 0);
-    padding: 10px;
-    border-radius: 50px;
-    width: 100px;
-    margin: 30px;
+    color: #000000; 
+    background-color: #ffffff; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 20px;
+    font-size: 24px; 
+    cursor: pointer; 
+    
 }
 
 
